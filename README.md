@@ -118,16 +118,20 @@ prev chronological vector as features.
 TODO:
 
 -Deal with nan features not resulting in handles.
+
 -Add compute princible components.
+
 -Add import dbase event.
--Add import dbase segments.
--Add import annotation.
--Add histogram to y-feature list.
--Add export graphs to powerpoint.
--Complete conflicts panel.
--Reset VCG vales at approriate time.
--Add prev cluster and next cluster as features (select sort)
--Add previous time cluster, next time cluster (select sort)
+
+	-Add import dbase segments.
+	-Add import annotation.
+	-Add histogram to y-feature list.
+	-Add export graphs to powerpoint.
+	-Complete conflicts panel.
+	-Reset VCG vales at approriate time.
+	-Add prev cluster and next cluster as features (select sort)
+	-Add previous time cluster, next time cluster (select sort)
+
 -Add isi feature.
 -Add icn feature.
 -Add time-of-day and time feature.
