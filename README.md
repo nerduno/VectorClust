@@ -117,28 +117,28 @@ prev chronological vector as features.
 
 TODO:
 
-+Deal with nan features not resulting in handles.
-+Add compute princible components.
-+Add import dbase event.
-+Add import dbase segments.
-+Add import annotation.
-+Add histogram to y-feature list.
-+Add export graphs to powerpoint.
-+Complete conflicts panel.
-+Reset VCG vales at approriate time.
-+Add prev cluster and next cluster as features (select sort)
-+Add previous time cluster, next time cluster (select sort)
-+Add isi feature.
-+Add icn feature.
-+Add time-of-day and time feature.
-+When color change, update html.
-+Set Store xlim/ylim for each view.
-+Make selection smarter, clear selection?, reset selection, substract from selection, augment selection
-+Key-press to undo-redo last polygon.
-+Limit to One polygon per cluster per view.
-+Make global options editable.
-+Add new cluster properties: markersize, markertype?
-+Add Run Macro button.
-+Make subsets only load subset from file.
-+Option to not load vector features.
-+Make imp/exp/cmp file lists use 'parameters' to put correct name in popup.
+-Deal with nan features not resulting in handles.
+-Add compute princible components.
+-Add import dbase event.
+-Add import dbase segments.
+-Add import annotation.
+-Add histogram to y-feature list.
+-Add export graphs to powerpoint.
+-Complete conflicts panel.
+-Reset VCG vales at approriate time.
+-Add prev cluster and next cluster as features (select sort)
+-Add previous time cluster, next time cluster (select sort)
+-Add isi feature.
+-Add icn feature.
+-Add time-of-day and time feature.
+-When color change, update html.
+-Set Store xlim/ylim for each view.
+-Make selection smarter, clear selection?, reset selection, substract from selection, augment selection
+-Key-press to undo-redo last polygon.
+-Limit to One polygon per cluster per view.
+-Make global options editable.
+-Add new cluster properties: markersize, markertype?
+-Add Run Macro button.
+-Make subsets only load subset from file.
+-Option to not load vector features.
+-Make imp/exp/cmp file lists use 'parameters' to put correct name in popup.
