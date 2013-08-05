@@ -1,9 +1,13 @@
+VectorClust
+=============
 
 VectorClust is matlab program for manually clustering data via a graphical user interface.  Each data element is a raw array of data called a vector (for example a sound snippet, or a voltage trace).  Each vector is also associated with a vector of features which can be computed by vectorClust.  The features can be scalars (e.g mean, std, mean pitch) or vector themselves (e.g. pitch waveform, smooth waveform). VectorClust allows you to visualize these features, and then define clusters using polygons in 2d feature projections. 
 
 VectorClust includes a few functions to import data, export data and compute features, and it is easy to write your own code for these purposes.  Any function in the VectorClust directory with the prefix vc_imp will appear as an import option.  Any function with the prefix vc_exp will be listed as an export options.  And any function with the prefix vc_cmf will be listed a option for computing vector features.
 
-VectorClust is still a work in progress.
+VectorClust was initially written for the purpose of clustering birdsong song syllables.  Therefore many of the included importers, exporters, and features relate to song syllables and make reference to tools used and written by myself and other from the laboratory of Michale Fee.
+
+Note that VectorClust is still a work in progress.
 
 It is useful to understand the data structures used by vectorClust.  The main data structure is the vcdb (vector clust database):
 
@@ -45,7 +49,8 @@ Assuming you have n data elements, vcdb includes the following data:
        vcdb.pathName: path name of that file %%% added for Tatsuo
 	
 vectorClust also maintains some internal state, that is not saved between sessions:
-    vcg.vcdbFilename (filename where vcbase is saved).
+    
+	vcg.vcdbFilename (filename where vcbase is saved).
     vcg.vcdir (the folder containing the vector clust functions)
     vcg.bSel  (boolean vector specifying which vectors are selected)(can't be true unless bDraw and bFilt are true)
     vcg.bDraw (boolean vector specifying which scatter points should be drawn given the current plot type)
@@ -67,7 +72,6 @@ vectorClust also maintains some internal state, that is not saved between sessio
     vcg.specgram.fs
     vcg.specgram.freqRange
     vcg.specgram.colorRange
-
     vcg.options.largeSetThreshold
                .unclusteredColor
                .unclusteredMarker
@@ -77,7 +81,7 @@ vectorClust also maintains some internal state, that is not saved between sessio
     
 
 0)
-Importing: 
+Importing:  
 [vectors, scalar_features, vector_features, cluster, time, identity, scalar_feature_names, vector_feature_names] = vc_imp_*(varargin);
 dmitri_dbase_segments
 dmitri_dbase_events
@@ -112,7 +116,7 @@ next chronological vector as features
 prev chronological vector as features.
 
 TODO:
-Deal with nan features not resulting in handles.
++Deal with nan features not resulting in handles.
 Add compute princible components.
 Add import dbase event.
 Add import dbase segments.
